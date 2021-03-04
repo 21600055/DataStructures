@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String args[]) {
 		
 		Main m = new Main();
-		m.runQueue();
+		m.runQueue();;
 	}
 	
 	public void runStack() { // 스택 예제
@@ -35,4 +35,5 @@ public class Main {
 		q1.Visualize();
 		
 	}
+	
 }
