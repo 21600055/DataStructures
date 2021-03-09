@@ -5,7 +5,7 @@ public class Main {
 	public static void main(String args[]) {
 		
 		Main m = new Main();
-		m.runQueue();;
+		m.runLinkedQueue();
 	}
 	
 	public void runStack() { // 스택 예제
@@ -34,6 +34,53 @@ public class Main {
 		q1.Dequeue();
 		q1.Visualize();
 		
+	}
+	
+	public void runLinkedlist() {
+		
+		Linked_List l1 = new Linked_List();
+		l1.Insert(1);
+		l1.Insert(2);
+		l1.Insert(3);
+		l1.Traverse();
+		l1.Delete(2);
+		l1.Traverse();
+		l1.Insert_before(1,2);
+		l1.Traverse();
+		l1.Insert_before(3,6);
+		l1.Traverse();
+		l1.Insert_before(8,7);
+		l1.Traverse();
+		l1.Insert_after(3,9);
+		l1.Traverse();
+		l1.Invert();
+		l1.Traverse();
+		l1.Delete();
+		l1.Traverse();
+	}
+	
+	public void runLinkedStack() {
+		
+		Linked_Stack ls1 = new Linked_Stack();
+		ls1.Push(1);
+		ls1.Push(2);
+		ls1.Push(3);
+		ls1.Push(4);
+		ls1.Traverse();
+		ls1.Pop();
+		ls1.Pop();
+		ls1.Traverse();
+	}
+	
+	public void runLinkedQueue() {
+		
+		Linked_Queue lq1 = new Linked_Queue();
+		lq1.Enqueue(1);
+		lq1.Enqueue(2);
+		lq1.Enqueue(3);
+		lq1.Traverse();
+		lq1.Dequeue();
+		lq1.Traverse();
 	}
 	
 }

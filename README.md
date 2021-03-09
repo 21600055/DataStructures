@@ -6,3 +6,6 @@ Stack: <https://21600055.github.io/data_structures/2021/02/03/Stack.html>
 
 
 Queue: <https://21600055.github.io/data_structures/2021/03/02/Queue.html>
+
+
+Linked_List: <>
