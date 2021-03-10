@@ -55,6 +55,7 @@ public class Linked_Queue {
 			a = front.getData();
 			d = front;
 			front = front.link;
+			if(Isempty()) rear = null;
 			d = null;
 			System.out.println("Dequeue 된것은 "+a+"입니다.");
 			return a;
