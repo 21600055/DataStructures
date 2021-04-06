@@ -5,7 +5,8 @@ public class Main {
 	public static void main(String args[]) {
 		
 		Main m = new Main();
-		m.runLinkedQueue();
+		//m.runLinkedQueue();
+		m.runTree();
 	}
 	
 	public void runStack() { // 스택 예제
@@ -81,6 +82,21 @@ public class Main {
 		lq1.Traverse();
 		lq1.Dequeue();
 		lq1.Traverse();
+		lq1.Dequeue();
+		lq1.Traverse();
+		lq1.Dequeue();
+		lq1.Traverse();
+	}
+	
+	public void runTree() {
+		
+		Tree t1 = new Tree();
+		for(int i=1;i<=7;i++) {
+			t1.Insert_level_order(i);
+		}
+		t1.TraverseInorder();
+		t1.TraversePreorder();
+		t1.TraversePostorder();
 	}
 	
 }
