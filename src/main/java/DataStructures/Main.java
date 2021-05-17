@@ -5,8 +5,7 @@ public class Main {
 	public static void main(String args[]) {
 		
 		Main m = new Main();
-		//m.runLinkedQueue();
-		m.runTree();
+		m.runHeap();
 	}
 	
 	public void runStack() { // 스택 예제
@@ -99,4 +98,21 @@ public class Main {
 		t1.TraversePostorder();
 	}
 	
+	public void runHeap() {
+
+		int a[] = {1,2,3,4,5,6,7,8,9};
+		int b[] = {2,3,5,7,4,5,6,7,9};
+		
+		System.out.println("a sorted");
+		Heapsort h1 = new Heapsort(a);
+		a = h1.gettemp();
+		for(int i=0;i<a.length;i++) System.out.print(a[i]+" ");
+		System.out.println();
+		
+		System.out.println("b sorted");
+		h1 = new Heapsort(b);
+		b = h1.gettemp();
+		for(int i=0;i<b.length;i++) System.out.print(b[i]+" ");
+		
+	}
 }
